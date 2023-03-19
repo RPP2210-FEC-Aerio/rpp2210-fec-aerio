@@ -6,7 +6,7 @@ import SortOptions from './SortOptions.jsx';
 import NewReview from './NewReview.jsx';
 
 
-const ReviewsList = ( { reviews, sortReviews, updateReviews, reviewsMeta }) => {
+const ReviewsList = ( { reviews, sortReviews, updateReviews, reviewsMeta, productName }) => {
 
   /*  This Component will:
       1) Render each reviewTile from reviews state
@@ -88,7 +88,7 @@ const ReviewsList = ( { reviews, sortReviews, updateReviews, reviewsMeta }) => {
       <button onClick={showModal}>Add Review</button>
 
       {showNewReview && createPortal(
-        <NewReview reviewsMeta={reviewsMeta} onClose={hideModal}/>,
+        <NewReview reviewsMeta={reviewsMeta} onClose={hideModal} productName={productName}/>,
         document.body
       )}
 

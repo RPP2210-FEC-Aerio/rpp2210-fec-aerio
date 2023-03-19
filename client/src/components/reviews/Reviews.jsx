@@ -7,8 +7,6 @@ import axios from 'axios';
 
 const Reviews = ({ productId, productName, updateAverageRating }) => {
 
-  console.log('PRODUCT NAME: ', productName);
-
   /*  This Component will need the below from it's parent:
         -) product_id, product name, product characteristics (latter two needed for NewReview)
       This Component will request the below from the API:
@@ -89,7 +87,7 @@ const Reviews = ({ productId, productName, updateAverageRating }) => {
       <h1>Reviews!</h1>
       <div className="reviews reviewsMain">
         <RatingBreakdown reviewsMeta={reviewsMeta}/>
-        { reviews.length !== 0 ? <ReviewList reviews={reviews} sortReviews={sortReviews} updateReviews={updateReviews} reviewsMeta={reviewsMeta}/> : null}
+        { reviews.length !== 0 ? <ReviewList reviews={reviews} sortReviews={sortReviews} updateReviews={updateReviews} reviewsMeta={reviewsMeta} productName={productName}/> : null}
       </div>
     </div>
   )

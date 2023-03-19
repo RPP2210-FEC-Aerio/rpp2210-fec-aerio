@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Characteristics from './Characteristics.jsx'
 
-const NewReview = ({reviewsMeta, onClose }) => {
+const NewReview = ({reviewsMeta, onClose, productName }) => {
 
   /* This component will:
     1) Need to control the inputs of each field in their own state
@@ -53,14 +53,37 @@ const NewReview = ({reviewsMeta, onClose }) => {
   return (
     <div data-testid='newReview-1' className="reviews newReview">
       <form onSubmit={handleSubmit}>
-        Write your review about PRODUCT_NAME
+        <div>Write Your Review</div>
+        <div>About the {productName}</div>
         <div>
           <label>Overall Rating</label>
-          <input type="text"></input>
+          <div className="reviews ratingOptions">
+            <label>
+              1
+              <input type="radio" name="star"></input>
+            </label>
+            <label>
+              2
+              <input type="radio" name="star"></input>
+            </label>
+            <label>
+              3
+              <input type="radio" name="star"></input>
+            </label>
+            <label>
+              4
+              <input type="radio" name="star"></input>
+            </label>
+            <label>
+              5
+              <input type="radio" name="star"></input>
+            </label>
+          </div>
         </div>
         <div>
           <label>Do you recommend this product?</label>
-          <input type="text"></input>
+          <button>Yes</button>
+          <button>No</button>
         </div>
         <div>
           <Characteristics characteristics={reviewsMeta.characteristics}/>
