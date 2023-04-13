@@ -2,10 +2,10 @@ import React from 'react';
 
 const StyleSelector = ( { selectedStyle, productStyles, updateSelectedStyle } ) => {
 
-  let count = -1;
-  const styleThumbnails = productStyles.map(style => {
-    count++;
-    let styleDescription = style.name;
+  // Do not need to define count here, can simply pass it as the second argument to map (index) -- will auto-increment
+  // For clarity, refactor "count" to be "index" ***
+  const styleThumbnails = productStyles.map((style, count) => {
+    let styleDescription = style.name; // Strike this variable, never used
     if (style.style_id === selectedStyle.style_id) {
       return (
         <div key={count} className="selected_style_thumbnail_cropper">

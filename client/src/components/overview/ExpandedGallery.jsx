@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 const ExpandedGallery = ( { mainImage, imageDescription, mainImageIndex, productPhotos, handleMainPreviousClick, handleMainNextClick, handleThumbnailClick, setShowExpanded } ) => {
 
+  // Likely do not need mainImage passed here -- can base everything off mainImageIndex ***
+
   const [isZoomed, setIsZoomed] = useState(false);
   const [transformOrigin, setTransformOrigin] = useState({});
   const [transform, setTransform] = useState('none');

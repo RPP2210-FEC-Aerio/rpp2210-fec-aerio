@@ -6,7 +6,6 @@ const Header = ({ theme, toggleTheme }) => {
 
   const handleLightModeClick = (e) => {
     e.preventDefault();
-    console.log('Light Mode Button Clicked!');
     toggleTheme(theme);
   }
 
@@ -19,7 +18,5 @@ const Header = ({ theme, toggleTheme }) => {
     </div>
   );
 }
-
-// {mainImageIndex > 0 ? <img className="main_image_previous" onClick={handleMainPreviousClick} src="https://cdn-icons-png.flaticon.com/512/2732/2732652.png" alt="Previous"></img> : null}
 
 export default Header;

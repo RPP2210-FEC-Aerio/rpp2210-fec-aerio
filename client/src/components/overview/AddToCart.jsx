@@ -8,8 +8,12 @@ const AddToCart = ( { productDetails, selectedStyle, productStyles, myOutfit, se
   const [selectedSize, setSelectedSize] = useState('');
   const [alertSize, setAlertSize] = useState(false);
   const [alertSuccessfulAdd, setAlertSuccessfulAdd] = useState(false);
+  // Can use the selectedQuantity value to render the quantityDefaultValue code, as well as pass to the helper function to render the quantity options ***
+    // This would set it to one helper function and one state to get the quantity array and handle conditional rendering
   const [selectedQuantity, setSelectedQuantity] = useState('Starting Quantity');
   const [quantityOptions, setQuantityOptions] = useState([]);
+  // Might be able to replace this with props -- If I have the number of each size; if count of all sizes is 0, render default (-); otherwise, render the option (1)
+    // Since I only use this code once ***
   const [quantityDefaultValue, setQuantityDefaultValue] = useState(<option value="Starting Quantity" disabled>-</option>);
 
   const ref = useRef(null);
@@ -29,6 +33,8 @@ const AddToCart = ( { productDetails, selectedStyle, productStyles, myOutfit, se
       setSelectedSize(styleSkuData[selectedSkuIndex][0]);
       setSelectedQuantity(1);
       let sizeStock = styleSkuData[selectedSkuIndex][1];
+        // If I can pass the # of each size, I could avoid hard-coding this to render the options
+        // Could make a helper function (like with size) to map only as long as we need to for the selected size ***
         setQuantityOptions(possibleQuantities.map(quantity => {
           if (quantity <= sizeStock) {
             return (
@@ -58,11 +64,11 @@ const AddToCart = ( { productDetails, selectedStyle, productStyles, myOutfit, se
         })
         .then(cartData => {
           console.log('Your Cart: ', cartData.data);
+          setAlertSuccessfulAdd(true);
         })
         .catch(error => {
           console.error('Error adding product to cart!');
         });
-        setAlertSuccessfulAdd(true);
     } else {
       setAlertSize(true);
       ref.current.focus();
