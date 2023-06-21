@@ -23,13 +23,13 @@ An add to cart section where users can select from sizes currently in stock, the
 ![](http://g.recordit.co/bIs2UdEaGc.gif)
 
 A related products list where users can see products similar to the current one
-![](https://recordit.co/crwaGQVIBd)
+![](http://g.recordit.co/crwaGQVIBd.gif)
 
 A comparison modal where users can compare the current product and a product in the related products list
-![](https://recordit.co/twuqdl3rOz)
+![](http://g.recordit.co/twuqdl3rOz.gif)
 
 An "add to outfit" feature allowing users to save and remove different products
-![](https://recordit.co/mXis2xRrlM)
+![](http://g.recordit.co/mXis2xRrlM.gif)
 
 A dynamic question and answer space for users to receive and provide personalized information on a given product
 > Q&A GIF TO GO HERE
