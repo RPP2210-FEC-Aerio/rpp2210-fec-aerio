@@ -34,8 +34,14 @@ A responsive image gallery which allows the user to examine their product of cho
 An add to cart section where users can select from sizes currently in stock, then add items to their cart
 ![](http://g.recordit.co/bIs2UdEaGc.gif)
 
+A related products list where users can see products similar to the current one
+![](http://g.recordit.co/crwaGQVIBd.gif)
+
+A comparison modal where users can compare the current product and a product in the related products list
+![](http://g.recordit.co/twuqdl3rOz.gif)
+
 An "add to outfit" feature allowing users to save and remove different products
-> RELATED PRODUCTS GIF TO GO HERE
+![](http://g.recordit.co/mXis2xRrlM.gif)
 
 A dynamic question and answer space for users to receive and provide personalized information on a given product
 > Q&A GIF TO GO HERE
