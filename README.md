@@ -26,7 +26,7 @@ An "add to outfit" feature allowing users to save and remove different products
 > RELATED PRODUCTS GIF TO GO HERE
 
 A dynamic question and answer space for users to receive and provide personalized information on a given product
-> Q&A GIF TO GO HERE
+![](http://g.recordit.co/9PCBscxdbP.gif)
 
 An informative ratings and reviews section providing the user with key metrics regarding the selected product
 > REVIEWS GIF TO GO HERE
