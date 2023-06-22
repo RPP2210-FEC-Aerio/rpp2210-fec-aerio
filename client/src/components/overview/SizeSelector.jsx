@@ -18,8 +18,9 @@ const SizeSelector = forwardRef(function SizeSelector({ selectedStyle, setSelect
   }
 
   // Could create a helper function to help get the total quantity for each size (gets the sizeOptions)
-  // Then, check if length of sizeOptions === 0, render Out of Stock; otherwise, render the selected options with Select Size and map function to iterate selectedStyleSKU's quantity ((if more than 1, return the options, otherwise, return null))
-  sizeOptions = styleSkuData.filter(item => {
+    // Then, check if length of sizeOptions === 0, render Out of Stock; otherwise, render the selected options with Select Size and map function to iterate selectedStyleSKU's quantity ((if more than 1, return the options, otherwise, return null))
+  // Could create another algorithm in a different file to help
+    sizeOptions = styleSkuData.filter(item => {
     if (item[1] === 0 || sizesUsed.indexOf(item[2]) > -1) {
       return false;
     }
@@ -44,6 +45,7 @@ const SizeSelector = forwardRef(function SizeSelector({ selectedStyle, setSelect
   }
 
   return (
+    
     <select ref={ref} data-testid="sizeSelectorDropdown" className="size_selector_dropdown" value={selected} onChange={handleSizeChange}>
       {sizeOptions}
     </select>
