@@ -47,7 +47,8 @@ A dynamic question and answer space for users to receive and provide personalize
 ![](https://drive.google.com/uc?id=1QcVw0tFMtt_UHVs28tnQMfqe-E1cDjPB)
 
 An informative ratings and reviews section providing the user with key metrics regarding the selected product
-> REVIEWS GIF TO GO HERE
+> ![Atelier Reviews](https://github.com/RPP2210-FEC-Aerio/rpp2210-fec-aerio/assets/97813007/f95ba8ab-ad17-44aa-b410-814ae804a72f)
+
 
 Options for light and dark mode
 ![](http://g.recordit.co/nvCQQMrXXJ.gif)
